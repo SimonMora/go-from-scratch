@@ -2,12 +2,33 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 
-	"github.com/SimonMora/go-from-scratch/variables"
+	"github.com/SimonMora/go-from-scratch/practice"
+	//"github.com/SimonMora/go-from-scratch/variables"
 )
 
 func main() {
-	var result, text = variables.ReturnString(1400)
+	/*var result, text = variables.ReturnString(1400)
 	fmt.Println(result)
-	fmt.Println(text)
+	fmt.Println(text)*/
+
+	if os := runtime.GOOS; os == "Linux." || os == "darwin" {
+		fmt.Print("This is not Windows, this is ", os)
+	} else {
+		fmt.Print("This is Windows.")
+	}
+
+	switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("This is not Windows, this is Linux.")
+	case "windows":
+		fmt.Println("This is not Windows, this is Windows.")
+	default:
+		fmt.Printf("\nThis is: %s \n", os)
+	}
+
+	integer, message := practice.EvaluateInteger("1556.1")
+	fmt.Printf("The integer passed was: %d\n", integer)
+	fmt.Println(message)
 }
