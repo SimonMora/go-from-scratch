@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"runtime"
-
+	//"github.com/SimonMora/go-from-scratch/iterate"
 	"github.com/SimonMora/go-from-scratch/practice"
 	//"github.com/SimonMora/go-from-scratch/variables"
 )
@@ -13,7 +11,7 @@ func main() {
 	fmt.Println(result)
 	fmt.Println(text)*/
 
-	if os := runtime.GOOS; os == "Linux." || os == "darwin" {
+	/*if os := runtime.GOOS; os == "Linux." || os == "darwin" {
 		fmt.Print("This is not Windows, this is ", os)
 	} else {
 		fmt.Print("This is Windows.")
@@ -26,9 +24,15 @@ func main() {
 		fmt.Println("This is not Windows, this is Windows.")
 	default:
 		fmt.Printf("\nThis is: %s \n", os)
-	}
+	}*/
 
-	integer, message := practice.EvaluateInteger("1556.1")
+	/*integer, message := practice.EvaluateInteger("15")
 	fmt.Printf("The integer passed was: %d\n", integer)
-	fmt.Println(message)
+	fmt.Println(message)*/
+
+	/*teclado.ReadNumbersAndMultiply()*/
+
+	//iterate.Iterate()
+
+	practice.MultiplicationTable()
 }
