@@ -9,8 +9,9 @@ import (
 
 var number int
 var err error
+var text string
 
-func MultiplicationTable() {
+func MultiplicationTable() string {
 	scn := bufio.NewScanner(os.Stdin)
 
 	for {
@@ -26,7 +27,8 @@ func MultiplicationTable() {
 	}
 
 	for i := 0; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d\n", number, i, number*i)
+		text += fmt.Sprintf("%d x %d = %d\n", number, i, number*i)
 	}
 
+	return text
 }
