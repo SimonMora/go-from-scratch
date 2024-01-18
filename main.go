@@ -3,7 +3,8 @@ package main
 import (
 	//"github.com/SimonMora/go-from-scratch/iterate"
 
-	"github.com/SimonMora/go-from-scratch/maps"
+	"github.com/SimonMora/go-from-scratch/interface_practice"
+	"github.com/SimonMora/go-from-scratch/model"
 	//"github.com/SimonMora/go-from-scratch/variables"
 )
 
@@ -48,5 +49,16 @@ func main() {
 	//fmt.Println(funciones.Pow(4, 4))
 
 	//slices.Capacity()
-	maps.ShowsMaps()
+	//maps.ShowsMaps()
+
+	/*u := new(model.User)
+	u.User(1, "Simon Mora", time.Now(), true)
+
+	fmt.Println(u)*/
+
+	Juan := new(model.Man)
+	interface_practice.HumanBreathing(Juan)
+
+	Maria := new(model.Woman)
+	interface_practice.HumanBreathing(Maria)
 }

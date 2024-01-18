@@ -1,0 +1,17 @@
+package model
+
+type Woman struct {
+	age       int
+	name      string
+	high      float32
+	weight    float32
+	breathing bool
+	thinking  bool
+	eating    bool
+	isAlive   bool
+}
+
+func (m *Woman) Breath()     { m.breathing = true }
+func (m *Woman) Think()      { m.thinking = true }
+func (m *Woman) Eat()        { m.eating = true }
+func (m *Woman) Sex() string { return "Woman" }
