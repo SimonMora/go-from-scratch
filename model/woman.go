@@ -11,6 +11,8 @@ type Woman struct {
 	isAlive   bool
 }
 
+// Each of this * means a pointer reference to the name of the structs,
+// this is how go can attached this functions to the struct (POO)
 func (m *Woman) Breath()       { m.breathing = true }
 func (m *Woman) Think()        { m.thinking = true }
 func (m *Woman) Eat()          { m.eating = true }
