@@ -3,8 +3,7 @@ package main
 import (
 	//"github.com/SimonMora/go-from-scratch/iterate"
 
-	"github.com/SimonMora/go-from-scratch/interface_practice"
-	"github.com/SimonMora/go-from-scratch/model"
+	d "github.com/SimonMora/go-from-scratch/defer_panic"
 	//"github.com/SimonMora/go-from-scratch/variables"
 )
 
@@ -56,9 +55,14 @@ func main() {
 
 	fmt.Println(u)*/
 
-	Juan := new(model.Man)
+	/*Juan := new(model.Man)
 	interface_practice.HumanBreathing(Juan)
 
 	Maria := new(model.Woman)
-	interface_practice.HumanBreathing(Maria)
+	interface_practice.HumanBreathing(Maria)*/
+
+	//Using alias when import the defer_panic package
+	//d.ShowDefer()
+	//d.ShowPanic()
+	d.ShowRecover()
 }

@@ -11,7 +11,8 @@ type Woman struct {
 	isAlive   bool
 }
 
-func (m *Woman) Breath()     { m.breathing = true }
-func (m *Woman) Think()      { m.thinking = true }
-func (m *Woman) Eat()        { m.eating = true }
-func (m *Woman) Sex() string { return "Woman" }
+func (m *Woman) Breath()       { m.breathing = true }
+func (m *Woman) Think()        { m.thinking = true }
+func (m *Woman) Eat()          { m.eating = true }
+func (m *Woman) Sex() string   { return "Woman" }
+func (m *Woman) IsAlive() bool { return m.isAlive }
