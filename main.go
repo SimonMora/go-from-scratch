@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/SimonMora/go-from-scratch/routines"
+	"github.com/SimonMora/go-from-scratch/middlewaree"
 	//d "github.com/SimonMora/go-from-scratch/defer_panic"
 	//"github.com/SimonMora/go-from-scratch/variables"
 )
@@ -65,17 +65,22 @@ func main() {
 	//d.ShowPanic()
 	//d.ShowRecover()
 
-	//async second class
-	//creates a channel to listen the event in the go routine
-	chn1 := make(chan bool)
-	// put the channel in the defer function so it awaits the channel signal to end the execution
-	defer func() {
-		<-chn1
-	}()
+	/*
+		//async second class
+		//creates a channel to listen the event in the go routine
+		chn1 := make(chan bool)
+		// put the channel in the defer function so it awaits the channel signal to end the execution
+		defer func() {
+			<-chn1
+		}()
 
-	go routines.SlowlyShowedName("Simon Augusto Mora Suarez", chn1)
+		go routines.SlowlyShowedName("Simon Augusto Mora Suarez", chn1)*/
 
 	/*fmt.Println("I'm here please input your message: ")
 	var x string
 	fmt.Scanln(&x)*/ // '&' indicates a pointer to the previously declared variable
+
+	//webserver.WebServer()
+
+	middlewaree.Middleware()
 }
